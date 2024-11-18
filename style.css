@@ -1,0 +1,19 @@
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+button img{
+    height: 100px;
+    width: 150px;
+}
+
+.player-title{
+    display: flex;
+    justify-content: left;
+}
+
+.computer-title{
+    display: flex;
+    justify-content: right;
+}
