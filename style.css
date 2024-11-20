@@ -8,10 +8,20 @@
 
 }
 
+button{
+    transition: 0.3s ease;
+}
+
 button img{
     width: 100px; /* or any desired width */
     height: auto;
     object-fit: cover;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.3);
 }
 
 .score{
