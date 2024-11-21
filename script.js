@@ -6,24 +6,26 @@ let playerScore = document.querySelector(".p-score");
 let cpuScore = document.querySelector(".c-score");
 let winOrLose = document.querySelector(".winorlose");
 let score = 0;
-
+let selection = 0;
 
 rockButton.addEventListener('click', () => {
     console.log("rock");
+    selection = 1;
 });
 
 paperButton.addEventListener('click',() => {
     console.log("Paper");
-
-});
+    selection = 2;
+    });
 
 scissorButton.addEventListener('click', () => {
     console.log("Scissors");
+    selection = 3;
 });
 
 function getCpuChoice() {
     const choices = ['rock', 'paper', 'scissors'];
-    const randomIndex = Math.floor(Math.random() * 3);
+    const randomIndex = Math.floor(Math.random() * 3) + 1;
     return choices[randomIndex];
 }
 
