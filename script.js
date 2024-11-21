@@ -9,15 +9,16 @@ let score = 0;
 
 
 rockButton.addEventListener('click', () => {
-
+    console.log("rock");
 });
 
 paperButton.addEventListener('click',() => {
+    console.log("Paper");
 
 });
 
 scissorButton.addEventListener('click', () => {
-
+    console.log("Scissors");
 });
 
 function getCpuChoice() {
@@ -28,14 +29,14 @@ function getCpuChoice() {
 
 function determineWinner(playerChoice, cpuChoice) {
     if (playerChoice === cpuChoice) {
-        // It's a tie
+        winOrLose.textContent = "Tie haha" + score;
     } else if (
         (playerChoice === 'rock' && cpuChoice === 'scissors') ||
         (playerChoice === 'paper' && cpuChoice === 'rock') ||
         (playerChoice === 'scissors' && cpuChoice === 'paper')
     ) {
-        // Player wins
+        winOrLose.textContent = "U got a point nice" + score;
     } else {
-        // CPU wins
+        winOrLose.textContent = "Wow u didnt win that XD" + score;
     }
 }
