@@ -112,7 +112,7 @@ const game = () => {
         }
         else {
             result.style.fontSize = '2rem';
-            result.innerText = 'aw it seems u two were ment to be <3';
+            result.innerText = 'aw it seems u two were meant to be <3';
             result.style.color = 'grey'
         }
         reloadBtn.innerText = 'Press this and ur weird (it restarts the game)';

@@ -50,6 +50,39 @@
     margin-top: 2rem;
 }
 
+.rock-img img {
+    width: 100px;
+    height: auto;
+}
+
+.rock-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paper-img img {
+    width: 100px;
+    height: auto;
+}
+
+.paper-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scissor-img img {
+    width: 100px;
+    height: auto;
+}
+
+.scissor-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Styling on all three buttons */
 .rock, .paper, .scissor{
     padding: 0.8rem;
